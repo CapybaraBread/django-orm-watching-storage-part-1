@@ -1,0 +1,70 @@
+__pycache__
+.env
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg-info/
+*.egg
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Environments
+.env
+.env.*
+!.env.example  # если хочешь показать структуру файла
+
+# Coverage reports
+htmlcov/
+coverage.xml
+.cache
+.pytest_cache/
+
+# Migrations (если не хочешь коммитить их)
+# */migrations/
+# !*/migrations/__init__.py
+
+# MyPy
+.mypy_cache/
+
+# Docker
+*.pid
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node (если юзаешь npm/yarn, например, для фронта)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+*.tgz
