@@ -21,7 +21,7 @@
 ### 1. Клонируй репозиторий
 
 ```bash
-git clone https://github.com/your-username/django-orm-watching-storage-part-1.git
+git https://github.com/CapybaraBread/django-orm-watching-storage-part-1.git
 cd django-orm-watching-storage-part-1
 ```
 
