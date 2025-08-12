@@ -33,7 +33,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+
 ### 3. Создай `.env` файл
+
+### 4. Пример запуска проекта
+
+```bash
+python3 main.py
+```
+
+После запуска сервер будет доступен по адресу: http://127.0.0.1:8000
 
 
 ### 5. Запустить

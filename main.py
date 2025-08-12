@@ -1,24 +1,18 @@
 import os
-import django  # type: ignore
+import django  
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
 django.setup()
 
-from datacenter.models import Passcard  # noqa: E402
+from datacenter.models import Passcard 
 
 if __name__ == '__main__':
-    print('Количество пропусков:', Passcard.objects.count())  # noqa: T001
-    Passcard = Passcard.objects.all()
-    print(Passcard[0].created_at)
-    print(Passcard[0].is_active)
-    print(Passcard[0].owner_name)
-    print(Passcard[0].passcode)
+    print('Количество пропусков:', Passcard.objects.count())  
+    passcard = Passcard.objects.all()
+    print(passcard[0].created_at)
+    print(passcard[0].is_active)
+    print(passcard[0].owner_name)
+    print(passcard[0].passcode)
 
-    # passcard_active_person = 0
-    # for passcard in Passcard:
-    #     if passcard.is_active == True:
-    #         passcard_active_person += 1
-    # print(passcard_active_person)
-
-    published_posts = Passcard.filter(is_active=True)
+    published_posts = passcard.filter(is_active=True)
     print('Количество активных пропусков:', len(published_posts))
