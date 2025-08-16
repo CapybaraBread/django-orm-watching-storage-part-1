@@ -8,11 +8,11 @@ from datacenter.models import Passcard
 
 if __name__ == '__main__':
     print('Количество пропусков:', Passcard.objects.count())  
-    passcard = Passcard.objects.all()
-    print(passcard[0].created_at)
-    print(passcard[0].is_active)
-    print(passcard[0].owner_name)
-    print(passcard[0].passcode)
+    all_passcards = Passcard.objects.all()
+    print(all_passcards[0].created_at)
+    print(all_passcards[0].is_active)
+    print(all_passcards[0].owner_name)
+    print(all_passcards[0].passcode)
 
-    published_posts = passcard.filter(is_active=True)
-    print('Количество активных пропусков:', len(published_posts))
+    active_passcards = all_passcards.filter(is_active=True)
+    print('Количество активных пропусков:', len(active_passcards))
